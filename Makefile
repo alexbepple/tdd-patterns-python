@@ -1,5 +1,5 @@
 test.once:
-	nosetests test/unit
+	nosetests --with-yanc test/unit
 
 test.continuously:
 	bundle exec guard start --clear --notify=false
