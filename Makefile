@@ -1,5 +1,3 @@
-test.once:
-	nosetests --with-yanc test/unit
-
-test.continuously:
-	bundle exec guard start --clear --notify=false
+tdd:
+	clear
+	watchmedo shell-command --patterns='*.py' --recursive --command='clear;flake8 . && py.test'
